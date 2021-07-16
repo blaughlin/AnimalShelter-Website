@@ -10,6 +10,7 @@ body {
 .container {
     text-align: center;
     padding: 2em;
+    padding-bottom: 0;
     height: 100%;
     background-image: linear-gradient(#434343 0%, black 100%);
 
@@ -30,11 +31,6 @@ h1>span {
 }
 
 
-
-.profile,
-.pic {
-    border-radius: 10px;
-}
 
 .profile {
     height: 260px;
@@ -68,7 +64,6 @@ h1>span {
 }
 
 .card {
-    /*ackground-image: linear-gradient(#404040, #282828);*/
     background-color: #282828;
     background-color: #111111;
     padding: 0;
