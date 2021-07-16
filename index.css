@@ -1,0 +1,148 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: linear-gradient(#434343 0%, black 100%);
+    color:#fff;
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+    padding: 2em;
+    height: 100%
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+h1>span {
+    color: #ff674d;
+}
+
+.subtitle {
+    margin-top: 0.2em;
+    font-size: 2.6em;
+
+}
+
+
+
+.profile,
+.pic {
+    border-radius: 10px;
+}
+
+.profile {
+    height: 260px;
+    padding: 1em;
+    background-color: #ff6700;
+    color: white;
+    cursor: pointer;
+}
+
+.pic {
+    max-height: 200px;
+    margin: 0 auto;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+}
+
+.card__img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+    margin-bottom: 0.5em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 0;
+}
+
+.card {
+    /*ackground-image: linear-gradient(#404040, #282828);*/
+    background-color: #282828;
+    background-color: #111111;
+    padding: 0;
+    border-radius: 10px;
+    border: 1px solid #181818;
+    text-align: left;
+    border: #404040 solid 1px;
+    border-radius: 10px;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+    margin-bottom: 0.5em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card__details {
+    padding: 1px 10px 8px 10px;
+}
+
+.portfolio__item {
+    background: #ff674d;
+    overflow: hidden;
+}
+
+card__details {
+    padding: 1px 10px 8px 10px;
+}
+.card__tag {
+    padding: 4px 8px;
+    border: 1px solid #b3b3b3;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #b3b3b3;
+}
+
+.card__name {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+
+.card__info {
+    font-size: 14px;
+    color: #b3b3b3;
+    line-height: 150%;
+    margin-bottom: 2em;
+    height: 50px;
+}
+
+.btn_container{
+    display: flex;
+    margin-bottom: 10px;
+}
+.card__btn {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: 1px solid #ff674d;
+    background-color: #111111;
+    color: #ff674d;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: var(--fs-body);
+}
+.card__btn:focus,
+.card__btn:hover {
+    opacity: 0.7;
+}
